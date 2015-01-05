@@ -1,0 +1,10 @@
+[{
+    "browser": "firefox",
+    "browser_version": "30.0",
+    "os": "Windows",
+    "os_version" : "7",
+	"browserstack.local":"true",
+	"timeout":"60"	
+  }
+
+]
