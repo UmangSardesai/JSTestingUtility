@@ -50,7 +50,7 @@ public class AppTest
             JSONObject j=(JSONObject)jsonArray.get(i);
             
             System.out.println("Creating Worker "+(i+1)+":");
-            j=cl.createWorker(j,"http://www.browserstack.com");//The URL on which you wish to test
+            j=cl.createWorker(j,"http://localhost");//The URL on which you wish to test
             if((j+"").contains("error"))
             {
                 System.out.println("Worker not created ");

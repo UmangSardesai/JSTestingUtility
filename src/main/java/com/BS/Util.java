@@ -18,13 +18,13 @@ import org.apache.http.util.EntityUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class Util 
+class Util 
 {
 	static HttpClient client = new DefaultHttpClient();
 	static HttpResponse response;
 	static JSONParser parser; 
 	
-	public static HttpResponse makeGetRequest(String url,String key, String type) throws IOException, ParseException
+	protected static HttpResponse makeGetRequest(String url,String key, String type) throws IOException, ParseException
 	{
 		if(response!=null)
 			EntityUtils.consume(response.getEntity());
@@ -41,7 +41,7 @@ public class Util
 		return response;
 	}
 	
-	public static HttpResponse makePostRequest(String url, String url2, String key, JSONObject obj) throws IOException
+	protected static HttpResponse makePostRequest(String url, String url2, String key, JSONObject obj) throws IOException
 	{
 		if(response!=null)
 			EntityUtils.consume(response.getEntity());
@@ -71,7 +71,7 @@ public class Util
 
 	}
 	
-	public static HttpResponse makeDeleteRequest(String url, String key, String type) throws IOException, InterruptedException, ParseException
+	protected static HttpResponse makeDeleteRequest(String url, String key, String type) throws IOException, InterruptedException, ParseException
 	{
 		if(response!=null)
 			EntityUtils.consume(response.getEntity());
@@ -89,7 +89,7 @@ public class Util
 		return response;
 	}
 	
-	public static HttpResponse takeScreenshot(String url,String key,String type) throws IOException
+	protected static HttpResponse takeScreenshot(String url,String key,String type) throws IOException
 	{
 		if(response!=null)
 			EntityUtils.consume(response.getEntity());

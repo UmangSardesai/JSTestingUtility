@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.BS.AppTest" time="38.117" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.BS.AppTest" time="58.027" errors="0" skipped="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="env.SYSTEMROOT" value="C:\WINDOWS"/>
@@ -15,26 +15,20 @@
     <property name="env.COMPUTERNAME" value="UMANG_SARDESAI"/>
     <property name="env.ALLUSERSPROFILE" value="C:\ProgramData"/>
     <property name="sun.desktop" value="windows"/>
-    <property name="env.CONEMUBACKHWND" value="0x0028081C"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.runtime.version" value="1.8.0_05-b13"/>
     <property name="env.HOMEPATH" value="\Users\Umang"/>
-    <property name="env.CONEMUPID" value="9048"/>
     <property name="user.name" value="Umang"/>
     <property name="maven.build.version" value="Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-12T02:28:10+05:30)"/>
-    <property name="env.CONEMUDRIVE" value="C:"/>
-    <property name="env.PATH" value="C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Documents\GitHub\browserstack-yeti-with-qunit\node_modules\.bin;C:\Users\Umang\Downloads;C:\Ruby193\bin;C:\Program Files\nodejs;C:\xampp\php;C:\Users\Umang\Downloads;C:\Maven\apache-maven-3.2.3\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Downloads\gradle-2.1\bin;C:\Program Files\nodejs;C:\xampp\php;"/>
+    <property name="env.PATH" value="C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Documents\GitHub\browserstack-yeti-with-qunit\node_modules\.bin;C:\Users\Umang\Downloads;C:\Ruby193\bin;C:\Program Files\nodejs;C:\xampp\php;C:\Users\Umang\AppData\Roaming\npm;C:\Python33;C:\Users\Umang\Downloads;C:\Maven\apache-maven-3.2.3\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Downloads\gradle-2.1\bin;C:\Program Files\nodejs;C:\xampp\php;C:\Users\Umang\AppData\Roaming\npm;C:\Python33"/>
     <property name="user.language" value="en"/>
     <property name="env.WINDIR" value="C:\WINDOWS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_05\jre\bin"/>
     <property name="classworlds.conf" value="C:\Maven\apache-maven-3.2.3\bin\m2.conf"/>
-    <property name="env.CONEMUBUILD" value="141208"/>
-    <property name="env.CONEMUCONFIG" value=""/>
     <property name="java.version" value="1.8.0_05"/>
     <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 69 Stepping 1, GenuineIntel"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="env.TEMP" value="C:\Users\Umang\AppData\Local\Temp"/>
-    <property name="env.CONEMUSERVERPID" value="2052"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -47,9 +41,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="user.country" value="IN"/>
-    <property name="env.CONEMUDRAWHWND" value="0x000B0830"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_05\jre"/>
-    <property name="env.CONEMUWORKDRIVE" value="C:"/>
     <property name="env.APPDATA" value="C:\Users\Umang\AppData\Roaming"/>
     <property name="env.CONFIGSETROOT" value="C:\WINDOWS\ConfigSetRoot"/>
     <property name="env.PUBLIC" value="C:\Users\Public"/>
@@ -59,7 +51,6 @@
     <property name="env.=::" value="::\"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.5-b02"/>
-    <property name="env.CONEMUDIR" value="C:\Program Files\ConEmu"/>
     <property name="env.USERPROFILE" value="C:\Users\Umang"/>
     <property name="user.variant" value=""/>
     <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_05"/>
@@ -76,23 +67,20 @@
     <property name="env.SESSIONNAME" value="Console"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="env.M2_HOME" value="C:\Maven\apache-maven-3.2.3"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_05\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Documents\GitHub\browserstack-yeti-with-qunit\node_modules\.bin;C:\Users\Umang\Downloads;C:\Ruby193\bin;C:\Program Files\nodejs;C:\xampp\php;C:\Users\Umang\Downloads;C:\Maven\apache-maven-3.2.3\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Downloads\gradle-2.1\bin;C:\Program Files\nodejs;C:\xampp\php;;."/>
     <property name="env.NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="env.CONEMUWORKDIR" value="C:\Users\Umang"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_05\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Documents\GitHub\browserstack-yeti-with-qunit\node_modules\.bin;C:\Users\Umang\Downloads;C:\Ruby193\bin;C:\Program Files\nodejs;C:\xampp\php;C:\Users\Umang\AppData\Roaming\npm;C:\Python33;C:\Users\Umang\Downloads;C:\Maven\apache-maven-3.2.3\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\Umang\Downloads\gradle-2.1\bin;C:\Program Files\nodejs;C:\xampp\php;C:\Users\Umang\AppData\Roaming\npm;C:\Python33;."/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="env.CLASSWORLDS_LAUNCHER" value="org.codehaus.plexus.classworlds.launcher.Launcher"/>
-    <property name="env.PSMODULEPATH" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
     <property name="env.COMMONPROGRAMFILES(X86)" value="C:\Program Files (x86)\Common Files"/>
-    <property name="env.MAVEN_CMD_LINE_ARGS" value="package"/>
+    <property name="env.PSMODULEPATH" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
+    <property name="env.MAVEN_CMD_LINE_ARGS" value="test"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="env.XNAGSSHARED" value="C:\Program Files (x86)\Common Files\Microsoft Shared\XNA\"/>
-    <property name="env.CONEMUHWND" value="0x001C08E6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Maven\apache-maven-3.2.3"/>
     <property name="java.class.path" value="C:\Maven\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="env.PROGRAMW6432" value="C:\Program Files"/>
-    <property name="env.CONEMUARGS" value=""/>
     <property name="maven.version" value="3.2.3"/>
     <property name="env.MAVEN_JAVA_EXE" value="&quot;C:\Program Files\Java\jdk1.8.0_05\bin\java.exe&quot;"/>
     <property name="env.PROGRAMFILES(X86)" value="C:\Program Files (x86)"/>
@@ -120,21 +108,17 @@
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="env.CLASSWORLDS_JAR" value="&quot;C:\Maven\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar&quot;"/>
     <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW"/>
-    <property name="env.CONEMUBASEDIR" value="C:\Program Files\ConEmu\ConEmu"/>
-    <property name="env.CONEMUHOOKS" value="Enabled"/>
     <property name="basedir" value="C:\Selenium\Java\JSTestingUtility"/>
     <property name="env.SELENIUM_SERVER_JAR" value="C:\Users\Umang\Downloads\selenium-2.42.2\selenium-server-standalone-2.42.2.jar"/>
     <property name="env.ERROR_CODE" value="0"/>
     <property name="env.M2" value="C:\Maven\apache-maven-3.2.3\bin"/>
-    <property name="env.CONEMUANSI" value="ON"/>
     <property name="env.USERNAME" value="Umang"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="sun.stderr.encoding" value="cp437"/>
     <property name="env.USERDOMAIN" value="Umang_Sardesai"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="env.=C:" value="C:\Selenium\Java\JSTestingUtility"/>
-    <property name="env.CONEMUANSILOG" value=""/>
     <property name="env.PROCESSOR_LEVEL" value="6"/>
   </properties>
-  <testcase classname="com.BS.AppTest" name="SampleTest" time="38.07"/>
+  <testcase classname="com.BS.AppTest" name="SampleTest" time="57.984"/>
 </testsuite>

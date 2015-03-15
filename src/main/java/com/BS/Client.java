@@ -12,19 +12,20 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 
-public class Client extends Util
+class Client
 {
 	JSONArray jsonArray;
+	JSONParser parser;
 	final String BS_API= "http://api.browserstack.com/3/";
 	String key = "";
 	String type = "application/json";
 	
-	public Client(String username, String accesskey)
+	Client(String username, String accesskey)
 	{
 		key=username+":"+accesskey;
 	}
 	
-	public Client()
+	Client()
 	{
 		Scanner sc=new Scanner (System.in);
 		System.out.println("Enter username");
@@ -34,60 +35,60 @@ public class Client extends Util
 		key=us+":"+ak;
 	}
 	
-	public JSONObject getListOfBrowsers() throws IOException, ParseException
+	JSONObject getListOfBrowsers() throws IOException, ParseException
 	{
 		HttpResponse response = Util.makeGetRequest(BS_API+"browsers",key,type);
 		JSONObject jsonResponse=convertToJSON(response);
 		return jsonResponse;
 	}
 	
-	public JSONObject createWorker(JSONObject params, String url) throws IOException, ParseException
+	JSONObject createWorker(JSONObject params, String url) throws IOException, ParseException
 	{
 		HttpResponse response = Util.makePostRequest(BS_API+"worker",url,key,params);
 		JSONObject jsonResponse=convertToJSON(response);
 		return jsonResponse;
 	}
 	
-	public JSONObject getWorkerStatus(String jobID) throws IOException, ParseException
+	JSONObject getWorkerStatus(String jobID) throws IOException, ParseException
 	{
 		HttpResponse response = Util.makeGetRequest(BS_API+"worker/"+jobID,key,type);
 		JSONObject jsonResponse=convertToJSON(response);
 		return jsonResponse;
 	}
 	
-	public JSONArray getTotalWorkersStatus() throws IOException, ParseException
+	JSONArray getTotalWorkersStatus() throws IOException, ParseException
 	{
 		HttpResponse response = Util.makeGetRequest(BS_API+"workers",key,type);
 		JSONArray jsonResponse=convertToJSONArray(response);
 		return jsonResponse;
 	}
 	
-	public JSONObject getAPIStatus() throws IOException, ParseException
+	JSONObject getAPIStatus() throws IOException, ParseException
 	{
 		HttpResponse response = Util.makeGetRequest(BS_API+"status",key,type);
 		JSONObject jsonResponse=convertToJSON(response);
 		return jsonResponse;		
 	}
 	
-	public void takeScreenshotAsIMG(String jobID, String path) throws IOException, ParseException
+	void takeScreenshotAsIMG(String jobID, String path) throws IOException, ParseException
 	{
 		HttpResponse response = Util.takeScreenshot(BS_API+"worker/"+jobID+"/screenshot.png",key,"image/png");
 		convertToIMG(response, path);
 	}
 	
-	public String takeScreenshotAsXML(String jobID) throws IOException, ParseException
+	String takeScreenshotAsXML(String jobID) throws IOException, ParseException
 	{
 		HttpResponse response = Util.takeScreenshot(BS_API+"worker/"+jobID+"/screenshot.xml",key,"text/xml");
 		return convertToString(response);
 	}
 	
-	public JSONObject takeScreenshotAsJSON(String jobID) throws IOException, ParseException
+	JSONObject takeScreenshotAsJSON(String jobID) throws IOException, ParseException
 	{
 		HttpResponse response = Util.takeScreenshot(BS_API+"worker/"+jobID+"/screenshot.json",key,"text/json");
 		return convertToJSON(response);
 	}
 	
-	public JSONObject deleteWorker(String jobID) throws IOException, InterruptedException, ParseException
+	JSONObject deleteWorker(String jobID) throws IOException, InterruptedException, ParseException
 	{
 		HttpResponse response =Util.makeDeleteRequest(BS_API+"worker/"+jobID, key, type);
 		JSONObject jsonResponse=convertToJSON(response);
@@ -95,7 +96,7 @@ public class Client extends Util
 	}
 	
 	
-	public static JSONObject convertToJSON(HttpResponse response) throws ParseException, IOException
+	JSONObject convertToJSON(HttpResponse response) throws ParseException, IOException
 	{
 		if (response!=null)
 		{
@@ -109,7 +110,7 @@ public class Client extends Util
 		return null;
 	}
 
-	public static String convertToString(HttpResponse response) throws ParseException, IOException
+	String convertToString(HttpResponse response) throws ParseException, IOException
 	{
 		if(response!=null)
 		{
@@ -126,7 +127,7 @@ public class Client extends Util
 		return "";
 	}
 	
-	public static JSONArray convertToJSONArray(HttpResponse response) throws ParseException, IOException
+	JSONArray convertToJSONArray(HttpResponse response) throws ParseException, IOException
 	{
 		if (response!=null)
 		{
@@ -140,7 +141,7 @@ public class Client extends Util
 		return null;
 	}
 	
-	public static void convertToIMG(HttpResponse response,String path) throws IllegalStateException, IOException
+	void convertToIMG(HttpResponse response,String path) throws IllegalStateException, IOException
 	{
 		if (response!=null)
 		{
