@@ -27,7 +27,7 @@ public class AppTest
     public void SampleTest() throws IOException, InterruptedException, SAXException, ParserConfigurationException, ParseException
     {
 
-        Client cl=new Client("umangsardesai1","jSKjzgP8o2X41YZArqR1");
+        Client cl=new Client("","");
         
         System.out.println("List of Browsers:");
         System.out.println(cl.getListOfBrowsers()+"\n");
