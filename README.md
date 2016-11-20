@@ -1,5 +1,5 @@
 # JSTestingUtility
-BrowserStack API for JavaScript Testing implemented using Java
+A utility for BrowserStack's [JavaScript Testing API](https://github.com/browserstack/api) implemented in Java. 
 
 ##How to Run
 
